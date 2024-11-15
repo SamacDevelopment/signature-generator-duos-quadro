@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.signature-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.signature-container .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select {
+    font-family: 'Arial', sans-serif;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #0a2136;
+    box-shadow: 0 0 5px rgba(10, 33, 54, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0a2136;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #14426b;
+    box-shadow: 0 4px 8px rgba(10, 33, 54, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.signature-container .signature {
+    text-align: left;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+}
+
+.form-section label{
+    margin-bottom:10px;
+}
+
+
