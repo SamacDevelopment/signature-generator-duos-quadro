@@ -17,21 +17,33 @@
         <option value="quadro" selected>Quadro Consulting</option>
         <option value="duos">Duos Asinos</option>
       </select>
-      <label for="first-name">Ime:</label>
-      <input type="text" id="first-name" placeholder="Unesite ime" required/>
-      <label for="last-name">Prezime:</label>
-      <input type="text" id="last-name" placeholder="Unesite prezime" required/>
+
+      <div class="name-container">
+        <div class="ime">
+          <label for="first-name">Ime:</label>
+          <input type="text" id="first-name" placeholder="Unesite ime" required />
+        </div>
+        <div class="prezime">
+          <label for="last-name">Prezime:</label>
+          <input type="text" id="last-name" placeholder="Unesite prezime" required />
+        </div>
+      </div>
+
       <label for="position">Pozicija:</label>
       <input type="text" id="position" placeholder="Unesite poziciju" />
+
       <label for="phone">Broj telefona:</label>
-      <input type="text" id="phone" placeholder="Unesite broj telefona" required/>
+      <input type="text" id="phone" placeholder="Unesite broj telefona" required />
+
       <label for="linkedin">LinkedIn URL:</label>
-      <input type="text" id="linkedin" placeholder="Unesite LinkedIn URL" required/>
+      <input type="text" id="linkedin" placeholder="Unesite LinkedIn URL" required />
+
       <div class="button-container">
         <button onclick="previewSignature()">Preview</button>
         <button onclick="copySignature()">Copy</button>
       </div>
     </div>
+
     <div class="signature">
       <table style="
         vertical-align: -webkit-baseline-middle;
@@ -120,7 +132,7 @@
                                       <span style="
                                         display: inline-block;
                                         background-color: #14426b;
-                                      "><img class="icons"style="
+                                      "><img class="icons" style="
                                           display: block;
                                           background-color: #14426b;
                                         " src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
@@ -180,7 +192,7 @@
                                       <span style="
                                         display: inline-block;
                                         background-color: #14426b;
-                                      "><img class="icons"style="
+                                      "><img class="icons" style="
                                           display: block;
                                           background-color: #14426b;
                                         " src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
@@ -191,8 +203,8 @@
                               </table>
                             </td>
                             <td style="padding: 3px">
-                              <span style="font-size: 12px; color: #0a2136"><span>Bulevar Mihajla Pupina
-                                  115v</span></span>
+                              <span class="address" style="font-size: 12px; color: #0a2136"><span>Bulevar Mihajla Pupina
+                                  115v, Belgrade, Serbia</span></span>
                             </td>
                           </tr>
                         </tbody>

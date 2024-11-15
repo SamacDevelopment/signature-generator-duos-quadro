@@ -3,17 +3,19 @@ function updateBrand() {
     const firma = document.getElementById('firma');
     const logo = document.getElementById('logo');
     const emailField = document.querySelector('.mail');
+    const addressField = document.querySelector('.address');
     if (brand === 'duos') {
         firma.textContent = 'Duos Asinos';
         logo.src = 'img/logo-duos.jpg';
+        addressField.textContent = 'Bulevar Mihajla Pupina 115v, Beograd, Srbija';
     } else {
         firma.textContent = 'Quadro Consulting';
         logo.src = 'img/logo-quadro.png';
+        addressField.textContent = 'Bulevar Mihajla Pupina 115v, Belgrade, Serbia';
     }
     const firstName = document.getElementById('first-name').value.trim().toLowerCase() || 'ime';
     const lastName = document.getElementById('last-name').value.trim().toLowerCase() || 'prezime';
     const domain = brand === 'duos' ? 'duosasinos.com' : 'quadro-consulting.de';
-
     emailField.textContent = `${firstName}.${lastName}@${domain}`;
 }
 
@@ -54,7 +56,7 @@ function copySignature() {
     selection.addRange(range);
     try {
         document.execCommand('copy');
-        alert('Potpis je kopiran. Sada ga mozete paste-ovati u email.');
+        alert('Signature je kopiran. Sada ga mozete paste-ovati u email.');
     } catch (err) {
         alert('Error');
     }
