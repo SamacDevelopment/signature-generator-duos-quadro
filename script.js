@@ -62,4 +62,3 @@ function copySignature() {
     }
     selection.removeAllRanges();
 }
-
