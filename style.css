@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #10426A, #1874bf);
     color: #333;
 }
 
@@ -38,7 +38,7 @@ input {
     margin-bottom: 20px;
     width: 100%;
     max-width: 350px;
-    border: 1px solid #ddd;
+    border: 1px solid #10426A;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
@@ -50,7 +50,7 @@ select{
     margin-bottom: 20px;
     width: 100%;
     max-width: 375px;
-    border: 1px solid #ddd;
+    border: 1px solid #10426A;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
