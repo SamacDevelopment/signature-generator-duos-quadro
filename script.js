@@ -25,6 +25,7 @@ function previewSignature() {
     const lastName = document.getElementById('last-name').value.trim();
     const position = document.getElementById('position').value.trim();
     const phone = document.getElementById('phone').value.trim();
+    const linkedin = document.getElementById('linkedin').value.trim();
     const emailField = document.querySelector('.mail');
     document.querySelector('.signature-container h2 span:first-child').textContent = firstName || 'Ime';
     document.querySelector('.signature-container h2 span:last-child').textContent = ` ${lastName || 'Prezime'}`;
@@ -40,6 +41,10 @@ function previewSignature() {
     const firma = document.getElementById('firma').textContent;
     const domain = firma === 'Duos Asinos' ? 'duosasinos.com' : 'quadro-consulting.de';
     emailField.textContent = `${(firstName || 'ime').toLowerCase()}.${(lastName || 'prezime').toLowerCase()}@${domain}`;
+    const linkedinButton = document.querySelector('.signature-container a.linkedin-button');
+    linkedinButton.href = linkedin || (firma === 'Duos Asinos'
+        ? 'https://www.linkedin.com/company/duos-asinos/'
+        : 'https://www.linkedin.com/company/quadro-consulting-germany/');
 }
 
 function copySignature() {
